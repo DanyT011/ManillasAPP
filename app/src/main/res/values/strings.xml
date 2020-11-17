@@ -17,7 +17,7 @@
     <string name="dolar">US</string>
     <string name="pesos">COP</string>
 
-    <string-array name="materiales">
+    <string-array name="material">
         <item>@string/cuero</item>
         <item>@string/cuerda</item>
     </string-array>
