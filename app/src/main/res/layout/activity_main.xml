@@ -76,13 +76,6 @@
         android:ems="10"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/btnCotizar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:onClick="cotizar"
-        android:text="@string/cotizar" />
-
     <TextView
         android:id="@+id/txtResultado"
         android:layout_width="match_parent"
@@ -91,5 +84,28 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCotizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cotizar"
+            android:text="@string/cotizar" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="limpiar"
+            android:text="@string/limpiar" />
+
+    </LinearLayout>
 
 </LinearLayout>

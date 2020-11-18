@@ -139,5 +139,15 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    public void limpiar(View v){
+        cantidad.setText("");
+        resultado.setText("");
+        cantidad.requestFocus();
+        material.setSelection(0);
+        dije.setSelection(0);
+        tipo.setSelection(0);
+        moneda.setSelection(0);
+    }
 }
 
