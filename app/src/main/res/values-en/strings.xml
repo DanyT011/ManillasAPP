@@ -17,4 +17,5 @@
     <string name="oro_rosado">Rose Gold</string>
     <string name="dolar">US</string>
     <string name="pesos">COP</string>
+    <string name="cotizar">Quote</string>
 </resources>

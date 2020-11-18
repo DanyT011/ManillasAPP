@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="cotizar"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/lblTitulo"
@@ -75,10 +76,17 @@
         android:ems="10"
         android:inputType="number" />
 
+    <Button
+        android:id="@+id/btnCotizar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="cotizar"
+        android:text="@string/cotizar" />
+
     <TextView
         android:id="@+id/txtResultado"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="26dp"
         android:hint="@string/resultado"
         android:textAlignment="center"
         android:textSize="18sp"

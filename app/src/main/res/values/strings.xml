@@ -16,6 +16,7 @@
     <string name="niquel">Niquel</string>
     <string name="dolar">US</string>
     <string name="pesos">COP</string>
+    <string name="cotizar">Cotizar</string>
 
     <string-array name="material">
         <item>@string/cuero</item>
