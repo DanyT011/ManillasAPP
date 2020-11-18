@@ -18,4 +18,6 @@
     <string name="dolar">US</string>
     <string name="pesos">COP</string>
     <string name="cotizar">Quote</string>
+    <string name="cantidad_manillas">Entry numbre of handles</string>
+    <string name="cantidad_manillas_cero">Enter a number greater than 0</string>
 </resources>

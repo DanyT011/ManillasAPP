@@ -17,6 +17,8 @@
     <string name="dolar">US</string>
     <string name="pesos">COP</string>
     <string name="cotizar">Cotizar</string>
+    <string name="cantidad_manillas">Ingrese cantidad de manillas</string>
+    <string name="cantidad_manillas_cero">Ingrese un número mayor que 0</string>
 
     <string-array name="material">
         <item>@string/cuero</item>

@@ -55,69 +55,89 @@ public class MainActivity extends AppCompatActivity {
         double precio = 0;
         int mon, mat, dij, tip, cant = 1, dolar = 3200;
 
-        cant = Integer.parseInt(cantidad.getText().toString());
-        mon = moneda.getSelectedItemPosition();
-        mat = material.getSelectedItemPosition();
-        dij = dije.getSelectedItemPosition();
-        tip = tipo.getSelectedItemPosition();
+        if(validar()){
+            cant = Integer.parseInt(cantidad.getText().toString());
+            mon = moneda.getSelectedItemPosition();
+            mat = material.getSelectedItemPosition();
+            dij = dije.getSelectedItemPosition();
+            tip = tipo.getSelectedItemPosition();
 
-        switch (mon){
-            case 0:
-                if(mat == 0 && dij == 0 && (tip == 0 || tip == 1)){
-                    precio = 100 * cant;
-                }else if(mat == 0 && dij == 0 && tip == 2){
-                    precio = 80 * cant;
-                }else if (mat == 0 && dij == 0 && tip == 3){
-                    precio = 70 * cant;
-                }else if (mat == 0 && dij == 1 && (tip == 0 || tip == 1)){
-                    precio = 120 * cant;
-                }else if (mat == 0 && dij == 1 && tip == 2){
-                    precio = 100 * cant;
-                }else if (mat == 0 && dij == 1 && tip == 3){
-                    precio = 90 * cant;
-                }else if(mat == 1 && dij == 0 && (tip == 0 || tip == 1)){
-                    precio = 90 * cant;
-                }else if(mat == 1 && dij == 0 && tip == 2){
-                    precio = 70 * cant;
-                }else if (mat == 1 && dij == 0 && tip == 3){
-                    precio = 50 * cant;
-                }else if (mat == 1 && dij == 1 && (tip == 0 || tip == 1)){
-                    precio = 110 * cant;
-                }else if (mat == 1 && dij == 1 && tip == 2){
-                    precio = 90 * cant;
-                }else if (mat == 1 && dij == 1 && tip == 3){
-                    precio = 80 * cant;
-                }
-                break;
-            case 1:
-                if(mat == 0 && dij == 0 && (tip == 0 || tip == 1)){
-                    precio = (100 * dolar) * cant;
-                }else if(mat == 0 && dij == 0 && tip == 2){
-                    precio = (80 * dolar) * cant;
-                }else if (mat == 0 && dij == 0 && tip == 3){
-                    precio = (70 * dolar) * cant;
-                }else if (mat == 0 && dij == 1 && (tip == 0 || tip == 1)){
-                    precio = (120 * dolar) * cant;
-                }else if (mat == 0 && dij == 1 && tip == 2){
-                    precio = (100 * dolar) * cant;
-                }else if (mat == 0 && dij == 1 && tip == 3){
-                    precio = (90 * dolar) * cant;
-                }else if(mat == 1 && dij == 0 && (tip == 0 || tip == 1)){
-                    precio = (90 * dolar) * cant;
-                }else if(mat == 1 && dij == 0 && tip == 2){
-                    precio = (70 * dolar) * cant;
-                }else if (mat == 1 && dij == 0 && tip == 3){
-                    precio = (50 * dolar) * cant;
-                }else if (mat == 1 && dij == 1 && (tip == 0 || tip == 1)){
-                    precio = (110 * dolar) * cant;
-                }else if (mat == 1 && dij == 1 && tip == 2){
-                    precio = (90 * dolar) * cant;
-                }else if (mat == 1 && dij == 1 && tip == 3){
-                    precio = (80 * dolar) * cant;
-                }
-                break;
+            switch (mon){
+                case 0:
+                    if(mat == 0 && dij == 0 && (tip == 0 || tip == 1)){
+                        precio = 100 * cant;
+                    }else if(mat == 0 && dij == 0 && tip == 2){
+                        precio = 80 * cant;
+                    }else if (mat == 0 && dij == 0 && tip == 3){
+                        precio = 70 * cant;
+                    }else if (mat == 0 && dij == 1 && (tip == 0 || tip == 1)){
+                        precio = 120 * cant;
+                    }else if (mat == 0 && dij == 1 && tip == 2){
+                        precio = 100 * cant;
+                    }else if (mat == 0 && dij == 1 && tip == 3){
+                        precio = 90 * cant;
+                    }else if(mat == 1 && dij == 0 && (tip == 0 || tip == 1)){
+                        precio = 90 * cant;
+                    }else if(mat == 1 && dij == 0 && tip == 2){
+                        precio = 70 * cant;
+                    }else if (mat == 1 && dij == 0 && tip == 3){
+                        precio = 50 * cant;
+                    }else if (mat == 1 && dij == 1 && (tip == 0 || tip == 1)){
+                        precio = 110 * cant;
+                    }else if (mat == 1 && dij == 1 && tip == 2){
+                        precio = 90 * cant;
+                    }else if (mat == 1 && dij == 1 && tip == 3){
+                        precio = 80 * cant;
+                    }
+                    break;
+                case 1:
+                    if(mat == 0 && dij == 0 && (tip == 0 || tip == 1)){
+                        precio = (100 * dolar) * cant;
+                    }else if(mat == 0 && dij == 0 && tip == 2){
+                        precio = (80 * dolar) * cant;
+                    }else if (mat == 0 && dij == 0 && tip == 3){
+                        precio = (70 * dolar) * cant;
+                    }else if (mat == 0 && dij == 1 && (tip == 0 || tip == 1)){
+                        precio = (120 * dolar) * cant;
+                    }else if (mat == 0 && dij == 1 && tip == 2){
+                        precio = (100 * dolar) * cant;
+                    }else if (mat == 0 && dij == 1 && tip == 3){
+                        precio = (90 * dolar) * cant;
+                    }else if(mat == 1 && dij == 0 && (tip == 0 || tip == 1)){
+                        precio = (90 * dolar) * cant;
+                    }else if(mat == 1 && dij == 0 && tip == 2){
+                        precio = (70 * dolar) * cant;
+                    }else if (mat == 1 && dij == 0 && tip == 3){
+                        precio = (50 * dolar) * cant;
+                    }else if (mat == 1 && dij == 1 && (tip == 0 || tip == 1)){
+                        precio = (110 * dolar) * cant;
+                    }else if (mat == 1 && dij == 1 && tip == 2){
+                        precio = (90 * dolar) * cant;
+                    }else if (mat == 1 && dij == 1 && tip == 3){
+                        precio = (80 * dolar) * cant;
+                    }
+                    break;
+            }
+            resultado.setText(String.valueOf(precio));
         }
-        resultado.setText(String.valueOf(precio));
+
+    }
+
+    public boolean validar(){
+        if(cantidad.getText().toString().isEmpty()){
+            cantidad.setError(getString(R.string.cantidad_manillas));
+            cantidad.requestFocus();
+            return false;
+        }
+
+        double cant = Double.parseDouble(cantidad.getText().toString());
+
+        if(cant == 0) {
+            cantidad.setError(getString(R.string.cantidad_manillas_cero));
+            cantidad.requestFocus();
+            return false;
+        }
+        return true;
     }
 }
 
